@@ -91,10 +91,10 @@ body{
         <div id="days" class="numbers "> </div>days</div> 
       <div class="weeks"> 
         <div  id="weeks" class="numbers"> </div>weeks</div> 
-      <div class="until"> 
-        <div  id="until" class="text"> </div>UNTIL</div> 
-      <div   class="vegas"> 
-        <div id="vegas" class="text"> </div>VEGAS</div> 
+      <div class="minutes"> 
+        <div  id="minutes" class="numbers"> </div>minutes</div> 
+      <div   class="seconds"> 
+        <div id="seconds" class="numbers"> </div>seconds</div> 
       </div>
 
 </div>
@@ -117,18 +117,17 @@ let timer = setInterval(function() {
   // math
   let days = Math.floor(diff / (1000 * 60 * 60 * 24));
   let weeks = Math.floor((diff / (1000 * 60 * 60 * 24)) / 7);
-  let until = "UNTILL"
-  let vegas = "VEGAS"
+  let minutes = "UNTIL"
+  let seconds = "VEGAS"
 
   // display
   document.getElementById("days").innerHTML=days
   document.getElementById("weeks").innerHTML=weeks
-  document.getElementById("until").innerHTML=until
-  document.getElementById("vegas").innerHTML=vegas
+  document.getElementById("minutes").innerHTML=minutes
+  document.getElementById("seconds").innerHTML=seconds
 
 
 
 }, 1);
 </script>
 </html>
-
