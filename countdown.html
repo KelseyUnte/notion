@@ -9,6 +9,7 @@
 
 body{
     background-color: white;
+
 }
   
 #timer {
@@ -21,7 +22,7 @@ body{
 }
 
 .days, .weeks, .text1, .text2 {
-  display: inline-block;
+  display: inline-table;
   height: 90px;
   width: 100px;
   border-radius: 10px;
@@ -48,7 +49,7 @@ body{
   color:  #183059;
   font-size: 4em;
   text-align: center;
-  padding: 5px 0;
+  padding: 8px 0;
 }
         
 .text {
@@ -110,7 +111,8 @@ let timer = setInterval(function() {
 
   // display
   document.getElementById("days").innerHTML=days
-  document.getElementById("weeks").innerHTML=weeks
+  document.getElementById("weeks").innerHTML=weeks 
+  
   document.getElementById("text1").innerHTML=text1
   document.getElementById("text2").innerHTML=text2
 
