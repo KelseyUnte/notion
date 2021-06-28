@@ -49,6 +49,13 @@ body{
   font-size: 4em;
   text-align: center;
 }
+        
+.text {
+  font-family: 'Montserrat', sans-serif;
+  color:  #183059;
+  font-size: 2em;
+  text-align: center;
+}
 
 .white {
   position: absolute;
@@ -91,10 +98,10 @@ body{
         <div id="days" class="numbers "> </div>days</div> 
       <div class="weeks"> 
         <div  id="weeks" class="numbers"> </div>weeks</div> 
-      <div class="minutes"> 
-        <div  id="minutes" class="numbers"> </div> </div>
-      <div   class="seconds"> 
-        <div id="seconds" class="numbers"> </div> </div>
+      <div class="text1"> 
+        <div  id="text1" class="text"> </div> </div>
+      <div   class="text2"> 
+        <div id="text2" class="text"> </div> </div>
       </div>
 
 </div>
@@ -117,14 +124,14 @@ let timer = setInterval(function() {
   // math
   let days = Math.floor(diff / (1000 * 60 * 60 * 24));
   let weeks = Math.floor((diff / (1000 * 60 * 60 * 24)) / 7);
-  let minutes = "UNTIL"
-  let seconds = "VEGAS"
+  let text1 = "UNTIL"
+  let text2 = "NV"
 
   // display
   document.getElementById("days").innerHTML=days
   document.getElementById("weeks").innerHTML=weeks
-  document.getElementById("minutes").innerHTML=minutes
-  document.getElementById("seconds").innerHTML=seconds
+  document.getElementById("text1").innerHTML=text1
+  document.getElementById("text2").innerHTML=text2
 
 
 
